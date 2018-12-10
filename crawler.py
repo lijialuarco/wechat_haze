@@ -17,7 +17,7 @@ import datetime as dt
 
 def amendmentName(index, base):
     index = int(index)
-    return (base + dt.timedelta(days=index // 9 - 1, hours=((index - 1) % 8) * 3)).strftime('%Y年%m月%d日%H时')
+    return (base + dt.timedelta(days=index // 9 - 1, hours=((index - 1) % 8) * 3)).strftime('%Y-%m-%d-%H')
 
 
 def addtwodimdict(thedict, key_a, key_b, val):
@@ -72,12 +72,13 @@ try:
         logging.info('第%s张图片下载完成' % (index))
         time.sleep(1)
 
-        text = pytesseract.image_to_string(Image.open(img_name), lang='chi_sim')
-        if text[0] != str(2):
-            text = amendmentName(index, datetime.today().replace(hour=0, minute=0, second=0, microsecond=0))
+        # text = pytesseract.image_to_string(Image.open(img_name), lang='chi_sim')
+
+        text = amendmentName(index, datetime.today().replace(hour=0, minute=0, second=0, microsecond=0))
         text = re.sub('年', '-',
                       re.sub('月', '-', re.sub('时', '-', re.sub('日', '-', re.sub('\s', '', text[:22])))))
         logging.info('文字分析完成:%s' % (text))
+
         im = Image.open(img_name)
         rgb_im = im.convert('RGB')
         rgb_im = im.convert('RGB')
