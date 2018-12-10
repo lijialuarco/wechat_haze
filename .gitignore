@@ -3,3 +3,5 @@ __pycache__/
 data/
 log/
 photo/
+itchat.pkl
+newInstance.pkl
