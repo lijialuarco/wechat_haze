@@ -1,0 +1,18 @@
+2018-12-06 16:27:04,174 - root - ERROR - HTTPSConnectionPool(host='www3.nhk.or.jp', port=443): Max retries exceeded with url: /news/taiki/img/casu_asia_jp_01.png (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:833)'),))
+2018-12-06 16:27:48,068 - root - ERROR - cannot identify image file './photo/01.png'
+2018-12-06 16:37:54,565 - root - ERROR - cannot identify image file './photo/05.png'
+2018-12-06 17:04:10,622 - root - ERROR - cannot identify image file './photo/13.png'
+2018-12-06 17:05:15,319 - root - ERROR - cannot identify image file './photo/03.png'
+2018-12-06 17:08:16,036 - root - ERROR - HTTPConnectionPool(host='www3.nhk.or.jp', port=80): Max retries exceeded with url: /news/taiki/img/casu_asia_jp_13.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x101f1fa90>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+2018-12-07 16:40:13,521 - root - ERROR - HTTPConnectionPool(host='www3.nhk.or.jp', port=80): Max retries exceeded with url: /news/taiki/img/casu_asia_jp_10.png (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x103157630>: Failed to establish a new connection: [Errno 60] Operation timed out',))
+2018-12-07 16:49:05,684 - root - ERROR - cannot identify image file './photo/16.png'
+2018-12-07 16:56:10,833 - root - ERROR - cannot identify image file './photo/10.png'
+2018-12-07 17:30:43,099 - root - ERROR - 'NoneType' object is not subscriptable
+2018-12-07 17:45:21,149 - root - ERROR - 'NoneType' object is not subscriptable
+2018-12-07 17:45:37,656 - root - ERROR - 'NoneType' object is not subscriptable
+2018-12-07 17:52:45,591 - root - ERROR - 'datetime.timedelta' object has no attribute 'strftime'
+2018-12-07 17:55:54,261 - root - ERROR - cannot identify image file './photo/01.png'
+2018-12-07 17:56:25,296 - root - ERROR - cannot identify image file './photo/01.png'
+2018-12-10 10:10:48,610 - root - ERROR - 'NoneType' object is not subscriptable
+2018-12-10 10:14:22,156 - root - ERROR - unsupported operand type(s) for /: 'str' and 'int'
+2018-12-10 10:56:01,996 - root - ERROR - invalid literal for int() with base 10: '一'
