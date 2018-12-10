@@ -19,7 +19,6 @@ def get_images(image_names):
         for key in data_set.keys():
             if key.find(image_name) != -1:
                 res.update({key: data_set[key]})
-    print(res)
 
     target = Image.new('RGB', (140, 250), (255, 255, 255))  # result is 2*5
     x = 0

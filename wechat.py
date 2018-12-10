@@ -9,11 +9,11 @@ import image_analyser
 
 def get_image_names(date_range):
     if date_range == 1:
-        return image_analyser.get_images([datetime.today().strftime('%Y年%m月%d日')])
+        return image_analyser.get_images([datetime.today().strftime('%Y-%m-%d')])
     if date_range == 7:
         date_list = []
         for i in range(-1, 6):
-            date_list.append((datetime.now() + dt.timedelta(days=i)).strftime('%Y年%m月%d日'))
+            date_list.append((datetime.now() + dt.timedelta(days=i)).strftime('%Y-%m-%d'))
         return image_analyser.get_images(date_list)
 
 
